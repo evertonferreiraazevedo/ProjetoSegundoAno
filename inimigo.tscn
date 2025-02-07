@@ -1,0 +1,77 @@
+[gd_scene load_steps=12 format=3 uid="uid://wanccljivv27"]
+
+[ext_resource type="Texture2D" uid="uid://ceo78tave4llm" path="res://sprites/mvSatyr.png" id="1_2c50i"]
+[ext_resource type="Script" path="res://inimigo.gd" id="1_7kimo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ccph3"]
+size = Vector2(18, 46.6667)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_46pmc"]
+atlas = ExtResource("1_2c50i")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0xgbk"]
+atlas = ExtResource("1_2c50i")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2xga"]
+atlas = ExtResource("1_2c50i")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwf18"]
+atlas = ExtResource("1_2c50i")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtvue"]
+atlas = ExtResource("1_2c50i")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q0k2c"]
+atlas = ExtResource("1_2c50i")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6v04"]
+atlas = ExtResource("1_2c50i")
+region = Rect2(192, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ykr27"]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_46pmc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0xgbk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c2xga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwf18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtvue")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q0k2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6v04")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="inimigo" type="CharacterBody2D"]
+scale = Vector2(1.2, 1.2)
+script = ExtResource("1_7kimo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7.5)
+shape = SubResource("RectangleShape2D_ccph3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ykr27")
+autoplay = "default"
+frame_progress = 0.691318

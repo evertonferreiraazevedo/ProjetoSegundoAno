@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://87ajutoda5yg"]
+
+[ext_resource type="Script" path="res://espinhos.gd" id="1_u74xq"]
+[ext_resource type="Texture2D" uid="uid://d3po068crdmkj" path="res://sprites/Spike-Sprite.png" id="2_c36vi"]
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_u74xq")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(15, 0, 23, 17, 41, 49, 48, 65, 47, 80, -39, 80, -40, 65, -32, 48, -15, 15, -8, 1, 4, -15)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_c36vi")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

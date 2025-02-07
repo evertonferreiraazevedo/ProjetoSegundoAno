@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1738937888
+cenario.tscn::PackedScene::8266246920107701468::1738845408::0::1::::<><>::uid://dsh4y8veakktm::::res://sprites/ceu.jpg<>uid://dcp3cgtcryjaw::::res://sprites/tileset.png<>uid://o3yrermr0tpn::::res://player.tscn<>uid://wanccljivv27::::res://inimigo.tscn<>uid://87ajutoda5yg::::res://espinhos.tscn
+espinhos.gd::GDScript::-1::1738846590::0::1::::<>Area2D<>::
+espinhos.tscn::PackedScene::2382309080788552798::1738846589::0::1::::<><>::res://espinhos.gd<>uid://d3po068crdmkj::::res://sprites/Spike-Sprite.png
+inimigo.gd::GDScript::-1::1738151832::0::1::::<>CharacterBody2D<>::
+inimigo.tscn::PackedScene::1544947574990495250::1738845408::0::1::::<><>::uid://ceo78tave4llm::::res://sprites/mvSatyr.png<>res://inimigo.gd
+player.gd::GDScript::-1::1738845408::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1041934191292929007::1738845408::0::1::::<><>::res://player.gd<>uid://brgbwhy2ycw4y::::res://sprites/hero_spritesheet.png
+::res://sprites/::1738844456
+ceu.jpg::CompressedTexture2D::8438917298579843914::1737551774::1737632225::1::::<><>::
+hero_spritesheet.png::CompressedTexture2D::3592117702520374970::1737548822::1737632225::1::::<><>::
+icon.svg::CompressedTexture2D::5923045295092949352::1737548268::1737632225::1::::<><>::
+mvSatyr.png::CompressedTexture2D::5084500904366851830::1737726529::1737726538::1::::<><>::
+Spike-Sprite.png::CompressedTexture2D::9156411701317580341::1738844456::1738844456::1::::<><>::
+tileset.png::CompressedTexture2D::7332309396657462410::1737550550::1737632225::1::::<><>::
